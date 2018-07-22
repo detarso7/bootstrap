@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+    <title>Template Portfólio</title>
+  </head>
+  <body>
+    <!-- 
+        ==========================================================================
+                                       NAVBAR
+        ==========================================================================
+     -->
+
+    <!-- navbar (basico) navbar-fixed-top (fixa o menu no topo)
+        navbar-expand-lg (expande a nav no tamanho de tela maior) 
+        navbar-dark (deixa o texto branco) bg-light (deixar o bd cinzinha) -->    
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">
+
+      <!-- Container para ajustar o conteudo centrlizado -->
+        <div class="container">            
+
+            <!-- ======================= LOGO MARCA ======================= -->
+
+            <!--navbar-brand (para a logo)-->
+            <a class="navbar-brand h2 mb-0" href="#">Saulo de Tarso</a>
+
+            <!-- ======================= BOTÃO MOBILE ======================= -->
+
+            <!-- criar botão para recolher a nav em despositivos menores -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- ======================= menu navegável ======================= -->
+
+                <div class="collapse navbar-collapse" id="navbarSite">
+
+                    <!-- mr(margem right)-auto = irá alinhar para a esquerda -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>     
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contatos</a>
+                        </li>                      
+                    </ul>
+
+    <!-- 
+        ==========================================================================
+                                      MENU DROPDOWN
+        ==========================================================================
+     -->
+
+                    <!-- ml(margem left)-auto = irá alinhar para a direita -->
+                    <ul class="navbar-nav ml-auto">
+
+                            <!--dropdown (prepara a lista para dropdown) -->
+                        <li class="nav-item dropdown">
+
+                            <!-- link iniciador do dropdown -->
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+                            
+                            <!-- box flutuante do dropdown -->
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Github</a>
+                                <a class="dropdown-item" href="#">Facebook</a>
+                                <a class="dropdown-item" href="#">Instagram</a>
+                            </div>
+                        </li>
+                    
+                    </ul>
+
+                    <!-- Formulário de busca / class form-inline (deixar o form em linha)
+                    ml-4 e ml-2 (afastar o menu para a esquerda e o botão "ok" para direita) -->
+                    <form class="form-inline ml-4 mr-2">
+                        <input class="form-control" type="search" placeholder="Buscar...">
+                    </form>
+                        <button class="btn btn-light" type="submit">Ok</button>
+
+                </div>
+        </div> <!-- and container -->       
+                
+    </nav><!-- and nav -->
+
+    <!-- 
+        ==========================================================================
+                                        CAROUSEL
+        ==========================================================================
+     -->
+
+    <!-- div carousel -->
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+
+        <!-- =======================  Botões indicadores ======================= -->
+
+        <ol class="carousel-indicators">
+            <!-- class active (para ficar ativo) propriedade: data-slide-tp (para ligar o botão seu espectivo slide) -->
+            <li class="active" data-target="#carouselSite" data-slide-to="0"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+        </ol>
+
+        <!-- ======================= O miolo do carrousel 1 ============================= -->
+        
+        <div class="carousel-inner">
+
+            <!-- Itens do carrousel 1 -->
+            <div class="carousel-item active">
+
+                <!-- class img-fluid (para ocupar o tamanho da dos epaço)
+                d-block (para acompanhar o tamanho da tela) -->
+                <img src="http://via.placeholder.com/1366x500" class="img-fluid d-block">
+                   
+                <!-- Texto por cima das imagens / class d-none (some o texto)
+                d-md-bloc (aparece o texto a partir do tmanho de tela média para cima) -->
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h1>Primeiro slide</h1>
+                    <p>Descrição do primeio slide lorem ipsun</p>
+                </div>
+
+            </div>
+
+            <!-- Itens do carrousel 2 -->
+            <div class="carousel-item">
+
+                <img src="http://via.placeholder.com/1366x500" class="img-fluid d-block">
+
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h1>Segundo slide</h1>
+                    <p>Descrição do segundo slide lorem ipsun</p>
+                </div>
+
+            </div> 
+
+             <!-- Itens do carrousel 3 -->
+            <div class="carousel-item">
+
+                <img src="http://via.placeholder.com/1366x500" class="img-fluid d-block">
+
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Terceiro slide</h1>
+                    <p>Descrição do terceiro slide lorem ipsun</p>
+                </div>
+
+            </div>           
+
+        </div> <!-- and miolo -->
+
+        <!-- ======================= Controles do carrousel ======================= 
+
+            class -prev (para voltar) -->
+            <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+                <!-- Utilzamos os span para inserir ícones (icon seta) -->
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+        <!-- Controles do carrousel / class -next (próximo) -->
+            <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+                <!-- Utilzamos os span para inserir ícones (icon seta) -->
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>            
+    </div><!-- and div carousel -->
+    
+            <!--======================= SAUDAÇÃO ======================= -->
+
+    <div class="container">
+        <!-- my(de 1 a 5) dará um espaçamento top e bottom -->
+        <div class="row text-center my-5">
+            <!-- col-12 no smatphone a coluna ocuparar a coluna toda -->
+            <div class="col-12">
+                <!-- display(de 1 a 5) dará novas dimensões aos titulos;
+                    class fa (foi instalado no projeto pelo npm o font awesome para utilização de icon) -->
+                <h1 class="display-3"><i class="fa fa-code text-primary"></i> Seja Bem Vindo <i class="fa fa-code text-primary"></i></h1>
+                <!-- lead dará nova formatação aos parágrafos -->
+                <p class="lead">Utilize as funções do site para conhecer os elementos aplicados.</p>
+                <p class="lead">Obs.: Não esqueça também de testar a resposividade...</p>
+                <hr class="mt-5">
+            </div>
+
+        </div>
+        
+            <!--======================= SCROLL SPY ======================= -->
+
+        <div class="row mb-5">
+
+            <div class="col-md-4 mb-3">
+
+                <nav id="navbarVertical" class="nav navbar-light bg-light">
+
+                    <!-- nav-pills eh o estilo / flex-column define na vertical -->
+                    <nav class=" nav nav-pills flex-column">
+
+                        <!-- a # serve para referenciar o id do item -->
+                        <a class="nav-link" href="#item1">Item 01</a>
+
+                            <!-- navegação com sub-itens 1-1-->
+                            <nav class=" nav nav-pills flex-column">
+
+                                    <a class="nav-link ml-3" href="#item1-1">Item 01-1</a>
+            
+                                    <a class="nav-link ml-3" href="#item1-2">Item 01-2</a>
+            
+                            </nav><!-- and nav sub-->
+
+                            <!-- mt-3 está dando espaçamento no top / mb-3 no bottom-->
+                        <a class="nav-link mt-3 mb-3" href="#item2">Item 02</a>
+
+                        <a class="nav-link" href="#item3">Item 03</a>
+
+                            <!-- navegação com sub-itens 3-3-->
+                            <nav class=" nav nav-pills flex-column">
+
+                                    <a class="nav-link ml-3" href="#item3-1">Item 03-1</a>
+            
+                                    <a class="nav-link ml-3" href="#item3-2">Item 03-2</a>
+            
+                            </nav><!-- and nav sub-->
+
+                    </nav><!-- and nav interna-->
+
+                </nav> <!-- and nav pai-->
+
+            </div>
+
+            <div class="col-md-8">
+
+                <!-- a class scrollSite foi criada no arquivo style.css-->
+                <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollSite">
+
+                    <h4 id="item1">Mussum Ipsum 1</h4>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi. </p>
+
+                    <h5 id="item1-1">Mussum Ipsum 1-1</h5>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi. </p>
+
+                    <h5 id="item1-2">Mussum Ipsum 1-2</h5>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi. </p>
+
+                    <h4 id="item2">Mussum Ipsum 2</h4>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi. </p>
+
+                    <h4 id="item3">Mussum Ipsum 3</h4>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi. </p>
+
+                    <h5 id="item3-1">Mussum Ipsum 3-1</h5>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi. </p>
+
+                    <h5 id="item3-2">Mussum Ipsum3-2</h5>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi. </p>
+
+                </div>
+
+            </div><!-- and col-9-->
+
+        </div><!-- and scroll-->
+
+                <!--======================= CARDS ======================= -->
+        
+        <div class="row my-5 justify-content-sm-center">
+
+            <!-- col-sm-4 (significa que terá 4 colunas a cima do tamanho "mínimo".
+                Abaixo disso (celular) terá 12 colunas)-->
+                <div class="col-sm-6 col-md-4 mb-3"><!-- card 01-->
+
+                    <div class="card text-center">
+
+                        <img class="card-img-top" src="http://via.placeholder.com/300x200"/>
+    
+                        <div class="card-body">
+                                <h4 class="card-title">Modelo Card</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">Um subtítulo qualquer</h6>
+                                <p class="card-text">No final, clique no link para abrir os modals</p>
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Titulo do Item 01</li>
+                            <li class="list-group-item">Titulo do Item 02</li>
+                            <li class="list-group-item">Titulo do Item 03</li>
+                        </ul>
+                        
+                        <div class="card-body">
+                            <!-- Este link está chamando o modal-->
+                            <a class="card-link" href="#" data-toggle="modal" data-target="#siteModal">Clique para abrir o dialog default</a>
+                        </div>
+
+                        <div class="card-footer text-muted">
+                                <p>Posuere libero varius</p> 
+                        </div>
+    
+                    </div>
+    
+                </div><!-- and card 01-->
+
+            <div class="col-sm-6 col-md-4 mb-3"><!-- card 02-->
+
+                <div class="card text-center">
+                    
+                    <img class="card-img-top" src="http://via.placeholder.com/300x200"/>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Modelo Card</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Um subtítulo qualquer</h6>
+                        <p class="card-text">No final, clique no link para abrir os modals</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Titulo do Item 01</li>
+                        <li class="list-group-item">Titulo do Item 02</li>
+                        <li class="list-group-item">Titulo do Item 03</li>
+                    </ul>
+                    
+                    <div class="card-body">
+                        <!-- Este link está chamando o modal-->
+                        <a class="card-link" href="#" data-toggle="modal" data-target="#siteModal02">Clique para abrir o dialog larger</a>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                            <p>Posuere libero varius</p> 
+                    </div>
+
+                </div>
+
+            </div><!-- and card 02-->
+
+            <div class="col-sm-6 col-md-4"><!-- card 03-->
+
+                <div class="card text-center">
+                    <img class="card-img-top" src="http://via.placeholder.com/300x200"/>
+
+                    <div class="card-body">
+                            <h4 class="card-title">Modelo Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Um subtítulo qualquer</h6>
+                            <p class="card-text">No final, clique no link para abrir os modals</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Titulo do Item 01</li>
+                        <li class="list-group-item">Titulo do Item 02</li>
+                        <li class="list-group-item">Titulo do Item 03</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <!-- Este link está chamando o modal-->
+                        <a class="card-link" href="#" data-toggle="modal" data-target="#siteModal03">Clique para abrir o dialog small</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                            <p>Posuere libero varius</p> 
+                    </div>
+
+                </div>
+
+            </div><!-- and card 03-->
+            
+        </div><!-- and card -->
+
+    </div>
+
+                    <!--======================= JOMBOTRON ======================= -->
+
+    <div class="jumbotron jumbotron-fluid">
+
+        <div class="container">
+
+        <div class="row"><!-- Início Cabeçalho -->
+
+            <div class="col-12 text-center">
+                <h1 class="display-4"><i class="fas fa-video text-primary"></i> Utilizando o Jumbotron</h1>
+                <p class="lead">Outro recadinho. Olhe o código fonte no Github para analisar a codificação de todo site</p>                
+                <hr><!-- cria uma linha -->
+            </div>
+
+        </div><!-- and Cabeçalho -->
+        
+                    <!--======================= MENU PAINEL ======================= -->
+
+        <div class="row"><!-- Início painel tab -->
+
+            <div class="col-12"><!-- Menu -->
+
+                <ul class="nav nav-pills justify-content-center mb-5" role="tablist">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Tab 01</a>
+                    </li>
+
+                    <li class="nav-item">
+                            <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Tab 02</a>
+                    </li>
+
+                    <li class="nav-item">
+                            <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Tab 03</a>
+                    </li>    
+
+                </ul>
+
+                        <!--======================= PAINEL ======================= -->
+
+                <div class="tab-content" id="nav-pills-content"><!-- Painel de Conteúdo -->
+
+                    <!-- classs show (mostrar) fade (transição) active (box ativo) -->
+                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                        
+                        <!-- Painel 01 -->
+                        <div class="row">
+
+                            <!-- Coluna Vídeo -->
+                            <div class="col-md-6 mb-3">
+
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://youtu.be/AltMeuPkWRs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                                              </div>
+                                
+
+                            </div>
+
+                            <!-- Coluna Texto -->
+                            <div class="col-md-6">
+                                <h1 class="display-3">Titulo do Item 1</h1>
+                                <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                                Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                                hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi.</p>
+                                <button class="btn btn-primary">Saiba mais...</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <!-- Painel 02 -->
+                    <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                        
+                        <div class="row">
+
+                                <!-- Coluna Vídeo -->
+                                <div class="col-md-6 mb-3">
+    
+                                    <figure class="figure">
+                                        <img src="http://via.placeholder.com/600x300" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                    </figure>
+                                    
+                                </div>
+    
+                                <!-- Coluna Texto -->
+                                <div class="col-md-6">
+                                    <h1 class="display-3">Titulo do Item 2</h1>
+                                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi.</p>
+                                    <button class="btn btn-primary">Saiba mais...</button>
+    
+                                </div>
+    
+                            </div>
+                    </div>
+
+                        <!-- Painel 03 -->
+                        <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+
+                                <div class="row">
+
+                                        <!-- Coluna Vídeo -->
+                                        <div class="col-md-6 mb-3">
+            
+                                            <!-- class para dar responsiveidade ao vídeo -->
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zZq1N_hNxUk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                                              </div>
+                                            
+                                        </div>
+            
+                                        <!-- Coluna Texto -->
+                                        <div class="col-md-6">
+                                            <h1 class="display-3">Titulo do Item 3</h1>
+                                            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                                            Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                                            hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, vehicula ac nisi.</p>
+                                            <button class="btn btn-primary">Saiba mais...</button>
+                                        </div>
+            
+                                </div>
+                        </div>
+                    </div>
+
+                </div><!-- and painel de conteúdo -->                
+
+            </div><!-- and Menu -->
+
+        </div><!-- and painel tab -->
+
+    </div><!-- and Container -->
+
+    </div><!--and Jumbotron -->
+
+                    <!--======================= GOGGLE MAPS ======================= -->
+
+    <div class="row"><!-- Início Cabeçalho -->
+
+        <div class="col-12 text-center my-5">
+            <h1 class="display-4"><i class="fas fa-map-marker-alt text-primary"></i>  Google Maps</h1>
+            <p class="lead">Inserindo mapa no bootstrap com codigo JavaScript de configuração</p>                
+        </div>
+
+    </div><!-- and Cabeçalho -->
+
+    <!--Google map-->
+<div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px">
+
+</div>
+
+                    <!--======================= TITULO DE CONTATO ======================= -->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 text-center my-3">
+
+                <h1 class="display-4"><i class="fa fa-paper-plane text-primary"></i> Formulário de Contato</h1>
+
+            </div>
+        </div>
+
+                    <!--======================= FORMULÁRIO ======================= -->
+
+            <!-- class form-rou (serve para diminuir o espaçamento enres as colunas do form)-->
+            <div class="row justify-content-center">
+
+                <!-- O form cai ocupar toda a tela no menor e irá diminuindo de tamnho ao aumentar a tela-->
+                <div class="col-sm-12 col-md-10 col-lg-8">
+
+                    <form class="mb-5">
+
+                        <!-- class form-rou (serve para diminuir o espaçamento enres as colunas do form)-->
+                                    <!-- group 01 -->
+                                    <div class="form-row">
+
+                                            <div class="form-group col-sm-6">
+                                                <label for="inputNome">Nome</label>
+                                                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label for="sobreNome">Sobrenome</label>
+                                                <input type="text" class="form-control" id="sobretNome" placeholder="Sobrenome">
+                                            </div>
+
+                                    </div><!-- and group 01 -->
+                                    
+                                    <!-- group 02 -->
+                                    <div class="form-row">
+
+                                            <div class="form-group col-sm-12">
+                                                    <label for="inputEnd">Endereço</label>
+                                                    <input type="text" class="form-control" id="inputEnd" placeholder="Endereço">
+                                            </div>
+
+                                    </div><!-- and group 02 -->
+
+                                    <!-- group 03 -->
+                                    <div class="form-row">
+
+                                            <div class="form-group col-sm-4">
+                                                <label for="inputCidade">Cidade</label>
+                                                <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                                            </div>
+
+                                            <div class="form-group col-sm-2">
+                                                <label for="inputEst">Estado</label>
+                                                <select id="inputEst" class="form-control">
+                                                    <option selected>Selecione...</option>
+                                                    <option selected>Acre</option>
+                                                    <option selected>Alagoas</option>
+                                                    <option selected>Amapá</option>
+                                                    <option selected>Amazonas</option>
+                                                    <option selected>Bahia</option>
+                                                    <option selected>Ceará</option>
+                                                    <option selected>Distrito Federal</option>
+                                                    <option selected>Espírito Santo</option>
+                                                    <option selected>Goiás</option>
+                                                    <option selected>Maranhão</option>
+                                                    <option selected>Mato Grosso</option>
+                                                    <option selected>Mato Grosso do Sul</option>
+                                                    <option selected>Minas Gerais</option>
+                                                    <option selected>Pará</option>
+                                                    <option selected>Paraíba</option>
+                                                    <option selected>Paraná</option>
+                                                    <option selected>Pernambuco</option>
+                                                    <option selected>Piauí</option>
+                                                    <option selected>Rio de Janeiro</option>
+                                                    <option selected>Rio Grande do Norte</option>
+                                                    <option selected>Rio Grande do Sul</option>
+                                                    <option selected>Rondônia</option>
+                                                    <option selected>Roraima</option>
+                                                    <option selected>Santa Catarina</option>
+                                                    <option selected>São Paulo</option>
+                                                    <option selected>Sergipe</option>
+                                                    <option selected>Tocantins</option>
+                                                </select>
+
+                                    </div>
+
+                                    <div class="form-group col-sm-6">
+                                                <label for="inputCep">CEP</label>
+                                                <input type="text" class="form-control" id="inputCidade" placeholder="CEP">
+                                    </div>
+
+                                </div><!-- and group 03 -->
+
+                                <div class="form-row">
+
+                                    <div class="form-group col-sm-12">
+
+                                        <div class="form-check">
+                                            
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"> Desejo receber novidades por email.
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+
+                                </div><!-- and cheackbox -->
+
+                                <!-- Botões Enviar e Ajuda -->
+                                <div class="form-row">
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                        <!-- <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>  -->                       
+                                    </div><!-- and Botóes Enviar e Ajuda -->
+
+                        </form><!-- and conteudo form -->
+
+                </div><!-- and coluna form -->
+
+            </div><!-- and form -->
+
+                    <!--======================= RODAPÉ ======================= -->
+
+            <div class="row">
+
+            <div class="col-12"><hr></div>
+
+                <div class="col-sm-4">
+                    <h3>Saulo de Tarso</h3>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis,
+                        per gatis num morreus. Leite de capivaris, leite de mula manquis sem cabeça.
+                        Mauris nec dolor in eros. Aenean aliquam molestie leo, vitae iaculis nisl. Suco de
+                        cevadiss deixa as pessoas mais interessantis. </p>
+                </div>
+
+                <div class="col-sm-4">
+
+                    <h3>Lista de Botões</h3>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-action ">Perfil</a>
+                        <a href="#" class="list-group-item list-group-action ">Serviço</a>
+                        <a href="#" class="list-group-item list-group-action ">Depoimentos</a>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <h3>Grupo de Botões</h3>
+
+                    <div class="btn-group-vertical btn-block btn-group-lg justify-content-left" role="group">
+                        <a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook-square"></i> Facebook</a>
+                        <a href="#" class="btn btn-outline-info"><i class="fab fa-twitter-square"></i> Twitter</a>
+                        <a href="#" class="btn btn-outline-danger"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+    
+                    <!--======================= MODAL 01 ======================= -->
+                            <!-- O Modal precisa ficar por último-->
+
+<!-- o interessante q o modal comece com -1 no tabindex / class fade (para dar efeito de transição)-->
+<div class="modal fade" id="siteModal" tabindex="-1" role="dialog"><!-- inicio do modal-->
+    
+    <!-- Aqui na class modal-dialog é possíl modificar os tamanhos com: modal-lg e modal-sm-->
+    <div class="modal-dialog" role="document">
+       
+            <!-- Estrutura do modal-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Titulo do Modal</h3>
+                    <!-- Botão para fechar em X-->
+                    <button type="button" class="close" data-dismiss="modal">
+                <!-- &times; (X redondinho), &CircleTimes; (X com uma bola), &timesb;(X quadrado),
+                &timesbar;(X com um traço embaixo), &InvisibleTimes; (X inivísvel), etc... -->
+                        <span>&times;</span>
+                    </button>
+                </div>
+                
+                <!-- Conteúdo do modal-->
+                <div class="modal-body">
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                    Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                    hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, </p>
+                </div>
+
+                <!-- Botão para fechar-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+
+            </div><!-- and estrutura do modal-->
+
+    </div><!-- and document do modal-->
+
+</div><!-- and modal-->
+
+            <!--======================= MODAL 02 ======================= -->
+
+<!-- inicio do modal-->
+<div class="modal fade" id="siteModal02" tabindex="-1" role="dialog">
+    
+    <div class="modal-dialog modal-lg" role="document">
+       
+            <!-- Estrutura do modal-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Layout Modificado</h3>
+
+                    <!-- Botão para fechar em X-->
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+
+                </div>
+                
+                <!-- Conteúdo do modal-->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 class="modal-title">Coluna 01</h2>
+                                <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                                Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                                hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, </p>
+                        </div>
+                        <div class="col-6">
+                                <h2 class="modal-title">Coluna 02</h2>
+                                <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                                Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                                hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão para fechar-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+
+            </div><!-- and estrutura do modal-->
+
+    </div><!-- and document do modal-->
+
+</div><!-- and modal-->
+
+                    <!--======================= MODAL 03 ======================= -->
+
+<!-- inicio do modal-->
+<div class="modal fade" id="siteModal03" tabindex="-1" role="dialog">
+    
+        <div class="modal-dialog modal-sm" role="document">
+           
+                <!-- Estrutura do modal-->
+                <div class="modal-content">
+    
+                    <div class="modal-header">
+                        <h3 class="modal-title">Titulo do Modal</h3>
+    
+                        <!-- Botão para fechar em X-->
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+    
+                    </div>
+                    
+                    <!-- Conteúdo do modal-->
+                    <div class="modal-body">
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
+                        Paisis, filhis, espiritis santis. Posuere libero varius. Nullam a nisl ut ante blandit
+                        hendrerit. Aenean sit amet nisi. Interagi no mé, cursus quis, </p>
+                    </div>
+    
+                    <!-- Botão para fechar-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    </div>
+    
+                </div><!-- and estrutura do modal-->
+    
+        </div><!-- and document do modal-->
+    
+    </div><!-- and modal-->
+
+
+
+
+    <!--<script>
+        $('.popover-dismiss').popover({trigger: 'focus'})
+    </script>-->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!--Google Maps-->
+<script src="https://maps.google.com/maps/api/js"></script>
+
+<!-- Google Maps settings -->
+<script>
+    // Regular map
+    function regular_map() {
+        var var_location = new google.maps.LatLng(-8.070702, -34.928672);
+  
+        var var_mapoptions = {
+            center: var_location,
+            zoom: 14
+        };
+  
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+  
+        var var_marker = new google.maps.Marker({
+            position: var_location,
+            map: var_map,
+            title: "New York"
+        });
+    }
+  
+    // Initialize maps
+    google.maps.event.addDomListener(window, 'load', regular_map);
+  </script>
+  </body>
+</html>
